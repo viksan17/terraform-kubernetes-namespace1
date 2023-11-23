@@ -8,6 +8,8 @@ resource "kubernetes_namespace" "example" {
       mylabel = "label-value"
     }
 
-    name = "terraform-namespace-example"
+    name = var.name
   }
 }
+
+
